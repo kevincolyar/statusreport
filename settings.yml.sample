@@ -1,0 +1,9 @@
+rtm:
+  rtm_api_key: 
+  rtm_shared_secret: 
+  rtm_frob: 
+  rtm_auth_token: 
+git:
+  dcpud: 
+    path: /Users/you/development/*/
+    author: Your Name
