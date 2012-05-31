@@ -10,6 +10,7 @@ Setup
 -----
 
 * Install ruby dependencies
+
 ``` bash
    bundle
 ```
