@@ -24,6 +24,15 @@ Usage
   ./status_report.rb
 ```
 
+Options
+-------
+
+Run report on last week's tasks
+
+```bash
+  ./status_report.rb --last-week
+```
+
 Advanced Usage
 --------------
 
@@ -37,4 +46,19 @@ Copy to OSX pasteboard
 
 ``` bash
    ./status_report | pbcopy
+```
+
+Output
+------
+
+``` bash
+Report - 2012-05-28 to 2012-06-03
+--------------------------------------------------------------------------------
+This Week
+
+project_a - Finished a task
+project_b - Worked on this thing
+project_c - Failed miserably on this task
+
+Next Week
 ```
