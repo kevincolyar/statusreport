@@ -12,9 +12,12 @@ module Rtm
     end
 
     def find
-      tasks = Rufus::RTM::Task.find(:filter => build_query)
-      tasks.each do |task|
-        yield task
+      begin
+        tasks = Rufus::RTM::Task.find(:filter => build_query)
+        tasks.each do |task|
+          yield task
+        end
+      rescue
       end
     end
   end

@@ -7,13 +7,13 @@ class StatusReportFormatter
   end
 
   def title
-    "Report - #{@start_date} to #{@end_date}\n" +
-    "--------------------------------------------------------------------------------\n" +
-    "This Week"
+    "# Report - #{@start_date} to #{@end_date}\n" +
+    "---\n\n" +
+    "## This Week"
   end
 
   def footer
-    "Next Week"
+    "## Next Week"
   end
 
   def to_s

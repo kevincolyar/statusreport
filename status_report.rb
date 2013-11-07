@@ -24,4 +24,7 @@ settings['git'].each do |repo|
 end
 
 status_report_formatter = StatusReportFormatter.new(start_date, end_date, status_report_builder.updates)
-puts status_report_formatter.to_s
+
+file = File.open("reports/" + end_date.strftime('%y_%m_%d') + '__' + start_date.strftime('%y_%m_%d') + '.md', 'w')
+file.write(status_report_formatter.to_s)
+

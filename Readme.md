@@ -48,6 +48,12 @@ Copy to OSX pasteboard
    ./status_report | pbcopy
 ```
 
+Open latest report
+
+``` bash
+     find reports | sort -r | head -1 | xargs vim
+```
+
 Output
 ------
 
